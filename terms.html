@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b0b0e" />
+    <meta
+      name="description"
+      content="Conditions d’utilisation de Kenz (Premium, abonnements, essai gratuit, résiliation). Terms of use. شروط الاستخدام."
+    />
+    <title>Conditions d’utilisation · Kenz</title>
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
+    <style>
+      /* Page autonome : aucune ressource externe (la police Manrope de l'app est utilisée si elle est à côté). */
+      @font-face {
+        font-family: 'Noto Sans Arabic';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('fonts/noto-sans-arabic-arabic-400-normal.woff2') format('woff2');
+        unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFC;
+      }
+      @font-face {
+        font-family: 'Noto Sans Arabic';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('fonts/noto-sans-arabic-arabic-700-normal.woff2') format('woff2');
+        unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFC;
+      }
+      @font-face {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 200 800;
+        font-display: swap;
+        src: url('fonts/manrope-latin.woff2') format('woff2');
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+          U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      :root {
+        color-scheme: dark;
+        --page: #0b0b0e;
+        --tile: #1a1b1f;
+        --tile-raised: #232429;
+        --hairline: rgba(255, 255, 255, 0.07);
+        --sheen: linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0) 55%);
+        --ink: #f2f2f4;
+        --ink-2: #9a9ca3;
+        --violet: #9b6bff;
+        --violet-ink: #c4a8ff;
+        --violet-soft: rgba(155, 107, 255, 0.16);
+        --glow: 0 0 32px rgba(155, 107, 255, 0.22);
+        --blue: #3a8ef0;
+        --orange: #e5602f;
+        --lilac: #c8b6ff;
+        --ok: #34d399;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          color-scheme: light;
+          --page: #f4f3f7;
+          --tile: #ffffff;
+          --tile-raised: #f1eff6;
+          --hairline: rgba(20, 16, 40, 0.08);
+          --sheen: none;
+          --ink: #15141a;
+          --ink-2: #5d5b66;
+          --violet: #6d3fe0;
+          --violet-ink: #5a2fd0;
+          --violet-soft: rgba(109, 63, 224, 0.1);
+          --glow: none;
+          --ok: #0f8a5f;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font:
+          400 16px/1.65 'Manrope',
+          'Noto Sans Arabic',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          sans-serif;
+        padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+          max(32px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+        overflow-wrap: anywhere;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        inset: -20vmax auto auto -20vmax;
+        width: 70vmax;
+        height: 70vmax;
+        background: radial-gradient(circle, var(--violet-soft), transparent 60%);
+        pointer-events: none;
+        z-index: -1;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        display: grid;
+        gap: 16px;
+      }
+      header {
+        display: grid;
+        gap: 14px;
+        padding: 8px 4px 12px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 17px;
+      }
+      .brand svg {
+        width: 32px;
+        height: 32px;
+        flex: none;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.15;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      .updated {
+        margin: 0;
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+      .chip {
+        justify-self: start;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: var(--violet-soft);
+        color: var(--violet-ink);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .tile {
+        background: var(--sheen), var(--tile);
+        border: 1px solid var(--hairline);
+        border-radius: 28px;
+        padding: 24px;
+      }
+      .hero {
+        border-color: color-mix(in oklab, var(--violet) 35%, var(--hairline));
+        box-shadow: var(--glow);
+      }
+      .hero p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .facts li {
+        background: var(--sheen), var(--tile);
+        border: 1px solid var(--hairline);
+        border-radius: 22px;
+        padding: 16px;
+        display: grid;
+        align-content: start;
+        gap: 6px;
+        font-size: 15px;
+        line-height: 1.45;
+        color: var(--ink-2);
+      }
+      .facts strong {
+        color: var(--ink);
+        font-size: 16px;
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+      }
+      h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+      }
+      .tile p,
+      .tile ul {
+        margin: 0 0 10px;
+        color: var(--ink-2);
+      }
+      .tile > :last-child {
+        margin-bottom: 0;
+      }
+      .tile ul {
+        padding-left: 1.2em;
+      }
+      .tile li {
+        margin: 4px 0;
+      }
+      .tile strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      a {
+        color: var(--violet-ink);
+        text-underline-offset: 3px;
+      }
+      a:focus-visible {
+        outline: 2px solid var(--violet);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      .placeholder {
+        background: var(--tile-raised);
+        border-radius: 8px;
+        padding: 1px 6px;
+        color: var(--ink);
+        white-space: nowrap;
+      }
+      footer {
+        text-align: center;
+        color: var(--ink-2);
+        font-size: 14px;
+        padding: 8px 0 0;
+      }
+      .back {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        background: var(--tile);
+        border: 1px solid var(--hairline);
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+        }
+        body::before,
+        .back {
+          display: none;
+        }
+        .tile,
+        .facts li {
+          border-color: #ccc;
+          box-shadow: none;
+          background: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7.25" fill="#1d1e24" />
+            <g fill="none" stroke="#9b6bff" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M7.75 16H24.25M16 6 13.2 16 16 26M16 6 18.8 16 16 26" stroke-width="1.3" opacity=".85" />
+              <path d="M16 6 24.25 16 16 26 7.75 16Z" stroke-width="2.6" />
+            </g>
+          </svg>
+          Kenz
+        </div>
+        <h1>Conditions d’utilisation</h1>
+        <p class="updated">Dernière mise à jour : 12 octobre 2026</p>
+        <span class="chip">Simple, honnête, sans surprise</span>
+        <p class="updated"><a href="#en" lang="en">English</a> · <a href="#ar" lang="ar">العربية</a></p>
+      </header>
+
+      <section class="tile hero" aria-label="En bref">
+        <p>
+          <strong>Kenz</strong> est une application de suivi de budget qui fonctionne sur votre téléphone. La version
+          gratuite reste utilisable sans limite de durée. <strong>Kenz Premium</strong> débloque des fonctions
+          supplémentaires, par abonnement (mensuel ou annuel) ou par un achat unique « à vie ».
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>1. L’application</h2>
+        <p>
+          Kenz est éditée par l’équipe Kenz (contact :
+          <a href="mailto:kenz.support@gmail.com">kenz.support@gmail.com</a>). En utilisant l’application, vous acceptez
+          ces conditions. Sur iPhone et iPad, le
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener" target="_blank"
+            >contrat de licence standard d’Apple (EULA)</a
+          >
+          s’applique également ; en cas de contradiction, il prévaut.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>2. Kenz Premium : offres et prix</h2>
+        <ul>
+          <li><strong>Mensuel</strong> : abonnement d’un mois, renouvelé automatiquement chaque mois.</li>
+          <li><strong>Annuel</strong> : abonnement d’un an, renouvelé automatiquement chaque année.</li>
+          <li><strong>À vie</strong> : paiement unique, sans abonnement ni renouvellement.</li>
+        </ul>
+        <p>
+          Le prix exact, dans votre devise, est toujours affiché dans l’application et par Google Play ou l’App Store
+          avant que vous confirmiez l’achat. Les taxes applicables sont incluses.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>3. Essai gratuit</h2>
+        <p>
+          Les abonnements peuvent commencer par un essai gratuit (par exemple 7 jours), une seule fois par compte. Si
+          vous n’annulez pas avant la fin de l’essai, l’abonnement démarre et le premier paiement est débité. Si vous
+          annulez pendant l’essai, vous ne payez rien.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>4. Renouvellement automatique et paiement</h2>
+        <ul>
+          <li>
+            Le paiement est débité sur votre compte Google Play ou Apple à la confirmation de l’achat (ou à la fin de
+            l’essai gratuit).
+          </li>
+          <li>
+            L’abonnement se <strong>renouvelle automatiquement</strong>, au même prix et pour la même durée, sauf s’il
+            est annulé <strong>au moins 24 heures avant la fin de la période en cours</strong>.
+          </li>
+          <li>Le renouvellement est débité dans les 24 heures précédant la fin de la période en cours.</li>
+          <li>
+            Si le prix change, la boutique vous prévient à l’avance, selon ses propres règles, et vous pouvez annuler.
+          </li>
+        </ul>
+      </section>
+
+      <section class="tile">
+        <h2>5. Annuler ou gérer un abonnement</h2>
+        <ul>
+          <li>
+            <strong>Android</strong> : Google Play → photo de profil → Paiements et abonnements → Abonnements → Kenz.
+          </li>
+          <li><strong>iPhone</strong> : Réglages → votre nom → Abonnements → Kenz.</li>
+          <li>Dans Kenz : Réglages → Premium → Gérer l’abonnement.</li>
+        </ul>
+        <p>
+          L’annulation prend effet à la fin de la période déjà payée : Premium reste actif jusque-là. Désinstaller
+          l’application n’annule pas l’abonnement.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>6. Remboursements et restauration</h2>
+        <p>
+          Les paiements sont encaissés par Google ou Apple ; les demandes de remboursement suivent leurs règles (Google
+          Play : play.google.com → Historique des commandes ; Apple : reportaproblem.apple.com). Sur un nouveau
+          téléphone, touchez « Restaurer mes achats » dans l’écran Premium, avec le même compte Google ou Apple.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>7. Vos données</h2>
+        <p>
+          Vos données restent sur votre appareil ; la sauvegarde Google Drive est facultative. Les détails sont dans la
+          <a href="privacy.html">politique de confidentialité</a>. Pensez à exporter une sauvegarde (Réglages → Données
+          → Sauvegarder) : nous ne pouvons pas récupérer des données effacées sur votre téléphone.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>8. Limites</h2>
+        <p>
+          Kenz est un outil d’organisation personnelle : les calculs (soldes, projections, budgets) sont indicatifs et
+          ne constituent pas un conseil financier, fiscal ou bancaire. L’application est fournie « en l’état » ; nous
+          faisons de notre mieux pour qu’elle fonctionne sans erreur, dans les limites prévues par la loi.
+        </p>
+      </section>
+
+      <section class="tile">
+        <h2>9. Modifications</h2>
+        <p>
+          Si ces conditions changent, la nouvelle version est publiée sur cette page avec sa date. Elles sont régies par
+          le droit applicable dans votre pays de résidence, sans vous priver des protections qu’il vous accorde.
+        </p>
+      </section>
+
+      <section class="tile" id="en" lang="en" aria-labelledby="en-title">
+        <h2 id="en-title">Terms of use — in English</h2>
+        <p>
+          <strong>Kenz</strong> is a budgeting app that runs on your phone. The free version can be used with no time
+          limit. <strong>Kenz Premium</strong> unlocks extra features through a subscription (monthly or yearly) or a
+          one-time “lifetime” purchase. On iPhone and iPad, Apple’s
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener" target="_blank"
+            >Standard End User License Agreement (EULA)</a
+          >
+          also applies and prevails in case of conflict.
+        </p>
+        <ul>
+          <li>
+            The exact price in your currency is shown in the app and by Google Play or the App Store before you buy.
+          </li>
+          <li>
+            <strong>Free trial</strong> (e.g. 7 days), once per account: cancel before it ends and you pay nothing;
+            otherwise the subscription starts and the first payment is charged.
+          </li>
+          <li>
+            Payment is charged to your Google Play or Apple account at confirmation of purchase (or when the trial
+            ends).
+            <strong>The subscription renews automatically</strong> at the same price and duration unless it is cancelled
+            <strong>at least 24 hours before the end of the current period</strong>; renewal is charged within the 24
+            hours before the period ends.
+          </li>
+          <li>
+            <strong>Cancel or manage</strong>: Google Play → Payments &amp; subscriptions → Subscriptions; on iPhone,
+            Settings → your name → Subscriptions; or in Kenz: Settings → Premium → Manage subscription. Premium stays
+            active until the end of the paid period. Uninstalling the app does not cancel a subscription.
+          </li>
+          <li>
+            Refunds follow Google’s or Apple’s rules. Use “Restore purchases” on a new phone with the same account.
+          </li>
+          <li>
+            Your data stays on your device (see the <a href="privacy.html#en">privacy policy</a>). Calculations are
+            indicative and are not financial advice. The app is provided “as is”, within the limits allowed by law.
+          </li>
+          <li>Contact: <a href="mailto:kenz.support@gmail.com">kenz.support@gmail.com</a>.</li>
+        </ul>
+      </section>
+
+      <section class="tile" id="ar" lang="ar" dir="rtl" aria-labelledby="ar-title">
+        <h2 id="ar-title">شروط الاستخدام — بالعربية</h2>
+        <p>
+          <strong>Kenz</strong> تطبيق لمتابعة الميزانية يعمل على هاتفك. النسخة المجانية متاحة دون حد زمني، ويفتح
+          <strong>Kenz Premium</strong> ميزات إضافية عبر اشتراك (شهري أو سنوي) أو شراء واحد «مدى الحياة». على iPhone و
+          iPad تسري أيضًا
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener" target="_blank"
+            >اتفاقية الترخيص القياسية من Apple (EULA)</a
+          >.
+        </p>
+        <ul>
+          <li>يظهر السعر الدقيق بعملتك في التطبيق وفي Google Play أو App Store قبل تأكيد الشراء.</li>
+          <li>
+            <strong>تجربة مجانية</strong> (مثلًا 7 أيام) مرة واحدة لكل حساب: ألغِ قبل نهايتها ولن تدفع شيئًا، وإلا يبدأ
+            الاشتراك ويُخصم أول دفع.
+          </li>
+          <li>
+            يُخصم المبلغ من حسابك في Google Play أو Apple عند تأكيد الشراء (أو عند نهاية التجربة).
+            <strong>يتجدد الاشتراك تلقائيًا</strong> بالسعر والمدة نفسيهما ما لم يُلغَ
+            <strong>قبل 24 ساعة على الأقل من نهاية الفترة الحالية</strong>.
+          </li>
+          <li>
+            <strong>الإلغاء أو الإدارة</strong>: Google Play ← الدفعات والاشتراكات ← الاشتراكات؛ على iPhone: الإعدادات ←
+            اسمك ← الاشتراكات؛ أو في Kenz: الإعدادات ← Premium ← إدارة الاشتراك. يبقى Premium مفعّلًا حتى نهاية الفترة
+            المدفوعة، وحذف التطبيق لا يلغي الاشتراك.
+          </li>
+          <li>تخضع المبالغ المستردة لقواعد Google أو Apple. استخدم «استعادة المشتريات» على هاتف جديد بالحساب نفسه.</li>
+          <li>
+            بياناتك تبقى على جهازك (راجع <a href="privacy.html#ar">سياسة الخصوصية</a>). الحسابات تقديرية وليست نصيحة
+            مالية. للتواصل: <a href="mailto:kenz.support@gmail.com">kenz.support@gmail.com</a>.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <a class="back" href="index.html">Kenz</a>
+      </footer>
+    </main>
+  </body>
+</html>
